@@ -11,6 +11,7 @@ import DataWarga from './pages/DataWarga';
 import Iuran from './pages/Iuran';
 import Galeri from './pages/Galeri';
 import Kontak from './pages/Kontak';
+import DaftarWargaQRIS from './pages/DaftarWargaQRIS';
 
 function App() {
   const [currentPage, setCurrentPage] = useState('beranda');
@@ -31,6 +32,8 @@ function App() {
         return <Galeri />;
       case 'kontak':
         return <Kontak />;
+      case 'qris':
+        return <DaftarWargaQRIS />;
       default:
         return <Beranda onNavigate={setCurrentPage} />;
     }

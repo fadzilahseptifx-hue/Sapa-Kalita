@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Home, Users, Newspaper, DollarSign, ImageIcon, Phone, Menu, X, UserCheck } from 'lucide-react';
+import { Home, Users, Newspaper, DollarSign, ImageIcon, Phone, Menu, X, UserCheck, QrCode } from 'lucide-react';
 
 interface HeaderProps {
   currentPage: string;
@@ -15,6 +15,7 @@ const Header: React.FC<HeaderProps> = ({ currentPage, onNavigate }) => {
     { id: 'berita', label: 'Berita & Pengumuman', icon: Newspaper },
     { id: 'data-warga', label: 'Data Warga', icon: UserCheck },
     { id: 'iuran', label: 'Iuran', icon: DollarSign },
+    { id: 'qris', label: 'Pembayaran QRIS', icon: QrCode },
     { id: 'galeri', label: 'Galeri', icon: ImageIcon },
     { id: 'kontak', label: 'Kontak', icon: Phone },
   ];
